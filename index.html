@@ -1,14 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paraná Encantado | Turismo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navegação -->
+    <nav>
+        <div class="logo">Paraná Encantado</div>
+        <ul class="nav-links">
+            <li><a href="#destinos">Destinos</a></li>
+            <li><a href="#experiencias">Experiências</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+        </ul>
+    </nav>
 
-What would you like to do with index.html?
+    <!-- Hero -->
+    <header>
+        <div class="header-content">
+            <h1>Paraná</h1>
+            <p class="subtitle">Terra de Cataratas, Florestas e Encantos Inesquecíveis</p>
+            <a href="#destinos" class="btn">Explorar Agora</a>
+        </div>
+    </header>
 
-For example:
+    <!-- Destinos -->
+    <section id="destinos">
+        <h2 class="section-title">Principais Destinos</h2>
+        <div class="destinos" id="destinos-container"></div>
+    </section>
 
-Create a basic HTML template
-Build a landing page
-Debug existing code
-Add CSS/JavaScript
-Make it responsive
-Convert a design into HTML
-Explain a specific section
+    <!-- Experiências -->
+    <section id="experiencias">
+        <h2 class="section-title">Experiências Imperdíveis</h2>
+        <div class="destinos">
+            <div class="card">
+                <img src="https://picsum.photos/id/1015/600/400" alt="Cataratas">
+                <div class="card-content">
+                    <h3>Cataratas do Iguaçu</h3>
+                    <p>Uma das 7 maravilhas do mundo moderno. Passeio de barco, trilhas e vista panorâmica.</p>
+                    <button class="btn" onclick="abrirModal(0)">Saiba mais</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/id/133/600/400" alt="Curitiba">
+                <div class="card-content">
+                    <h3>Curitiba - Cidade Jardim</h3>
+                    <p>Jardim Botânico, Ópera de Arame, Bosque do Papa e gastronomia de alto nível.</p>
+                    <button class="btn" onclick="abrirModal(1)">Saiba mais</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/id/201/600/400" alt="Litoral">
+                <div class="card-content">
+                    <h3>Litoral Paranaense</h3>
+                    <p>Praias selvagens, Ilha do Mel, Matinhos e a rica cultura caiçara.</p>
+                    <button class="btn" onclick="abrirModal(2)">Saiba mais</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-Paste the code or describe the page you want.
+    <!-- Galeria -->
+    <section id="galeria">
+        <h2 class="section-title">Galeria de Momentos</h2>
+        <div class="galeria" id="galeria-container"></div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre">
+        <h2 class="section-title">Por que visitar o Paraná?</h2>
+        <div class="sobre-content">
+            <p>O Paraná é um estado rico em diversidade: das imponentes Cataratas do Iguaçu à charmosa capital Curitiba, passando por serras, praias e uma gastronomia que mistura influências europeias, indígenas e caipiras.</p>
+            <p>Venha viver experiências autênticas em um dos estados mais preservados do Brasil.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Paraná Encantado - Turismo Oficial</p>
+        <p>Descubra o que o Sul tem de melhor</p>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">×</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
